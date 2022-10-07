@@ -25,6 +25,7 @@ const Header = () => {
 
     return (
         <Fragment>
+            <div>
             {
                 headers.map(header => (
                     <NavLink key={header.id} to={"/" + header.id}>
@@ -32,6 +33,7 @@ const Header = () => {
                     </NavLink>
                 ))
             }
+            </div>
         </Fragment>
     )
 }
